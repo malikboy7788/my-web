@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatting Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <input type="text" id="profession" placeholder="Profession">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="dashboard" style="display:none;">
+        <div id="profile">
+            <span id="profile-info"></span>
+            <button onclick="editProfile()">Edit Profile</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+        <button onclick="createChatSpace()">Create Chat Space</button>
+        <button onclick="joinChatSpace()">Join Chat Space</button>
+    </div>
+
+    <div id="chatspace" style="display:none;">
+        <h2>Chat Space</h2>
+        <div id="messages"></div>
+        <input type="text" id="message" placeholder="Type your message">
+        <button onclick="sendMessage()">Send</button>
+        <button onclick="exitChatSpace()">Exit</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
